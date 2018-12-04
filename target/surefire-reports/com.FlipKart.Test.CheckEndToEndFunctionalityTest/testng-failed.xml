@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.FlipKart.Test.CheckEndToEndFunctionalityTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.FlipKart.Test.CheckEndToEndFunctionalityTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logoutMethod"/>
+          <include name="tearDown"/>
+          <include name="closeBrowser"/>
+          <include name="test_3_LoginWithCorrectCredentials"/>
+        </methods>
+      </class> <!-- com.FlipKart.Test.CheckEndToEndFunctionalityTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.FlipKart.Test.CheckEndToEndFunctionalityTest] -->

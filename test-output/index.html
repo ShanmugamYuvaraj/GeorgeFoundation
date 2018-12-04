@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AdjunoGeorgeFoundation">
+              <span class="suite-name border-failed">AdjunoGeorgeFoundation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AdjunoGeorgeFoundation">
+                    <span>C:\MavenProject\AdjunoGeorgeFoundation\testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AdjunoGeorgeFoundation">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AdjunoGeorgeFoundation">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AdjunoGeorgeFoundation">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AdjunoGeorgeFoundation">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AdjunoGeorgeFoundation">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AdjunoGeorgeFoundation">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AdjunoGeorgeFoundation" class="hide-methods failed suite-AdjunoGeorgeFoundation"> (hide)</a> <!-- hide-methods failed suite-AdjunoGeorgeFoundation -->
+                      <a href="#" panel-name="suite-AdjunoGeorgeFoundation" class="show-methods failed suite-AdjunoGeorgeFoundation"> (show)</a> <!-- show-methods failed suite-AdjunoGeorgeFoundation -->
+                    </span>
+                    <div class="method-list-content failed suite-AdjunoGeorgeFoundation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AdjunoGeorgeFoundation" title="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest" hash-for-method="test_3_LoginWithCorrectCredentials">test_3_LoginWithCorrectCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AdjunoGeorgeFoundation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AdjunoGeorgeFoundation" class="hide-methods passed suite-AdjunoGeorgeFoundation"> (hide)</a> <!-- hide-methods passed suite-AdjunoGeorgeFoundation -->
+                      <a href="#" panel-name="suite-AdjunoGeorgeFoundation" class="show-methods passed suite-AdjunoGeorgeFoundation"> (show)</a> <!-- show-methods passed suite-AdjunoGeorgeFoundation -->
+                    </span>
+                    <div class="method-list-content passed suite-AdjunoGeorgeFoundation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AdjunoGeorgeFoundation" title="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest" hash-for-method="test_1_LaunchTheBrowser">test_1_LaunchTheBrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AdjunoGeorgeFoundation" title="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest" hash-for-method="test_2_LoginWithIncorrectCredentials">test_2_LoginWithIncorrectCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AdjunoGeorgeFoundation" title="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest" hash-for-method="test_4_SearchProductFromAutosuggestionBox">test_4_SearchProductFromAutosuggestionBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AdjunoGeorgeFoundation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AdjunoGeorgeFoundation" class="panel AdjunoGeorgeFoundation">
+          <div class="suite-AdjunoGeorgeFoundation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_3_LoginWithCorrectCredentials">
+                  </a> <!-- test_3_LoginWithCorrectCredentials -->
+                  <span class="method-name">test_3_LoginWithCorrectCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	***** test_3_ In FlipKart application the user name is incorrect ***** expected [true] but found [false]
+	at com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest.test_3_LoginWithCorrectCredentials(CheckEndToEndFunctionalityTest.java:60)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AdjunoGeorgeFoundation-class-failed -->
+          <div class="suite-AdjunoGeorgeFoundation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_1_LaunchTheBrowser">
+                  </a> <!-- test_1_LaunchTheBrowser -->
+                  <span class="method-name">test_1_LaunchTheBrowser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_2_LoginWithIncorrectCredentials">
+                  </a> <!-- test_2_LoginWithIncorrectCredentials -->
+                  <span class="method-name">test_2_LoginWithIncorrectCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_4_SearchProductFromAutosuggestionBox">
+                  </a> <!-- test_4_SearchProductFromAutosuggestionBox -->
+                  <span class="method-name">test_4_SearchProductFromAutosuggestionBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AdjunoGeorgeFoundation-class-passed -->
+        </div> <!-- panel AdjunoGeorgeFoundation -->
+        <div panel-name="test-xml-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\MavenProject\AdjunoGeorgeFoundation\testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AdjunoGeorgeFoundation&quot; parallel=&quot;none&quot;&gt;
+  &lt;test name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- AdjunoGeorgeFoundation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AdjunoGeorgeFoundation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AdjunoGeorgeFoundation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AdjunoGeorgeFoundation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AdjunoGeorgeFoundation');
+function tableData_AdjunoGeorgeFoundation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_1_LaunchTheBrowser')
+data.setCell(0, 2, 'com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest')
+data.setCell(0, 3, 14781);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_4_SearchProductFromAutosuggestionBox')
+data.setCell(1, 2, 'com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest')
+data.setCell(1, 3, 9374);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_3_LoginWithCorrectCredentials')
+data.setCell(2, 2, 'com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest')
+data.setCell(2, 3, 9340);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_2_LoginWithIncorrectCredentials')
+data.setCell(3, 2, 'com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest')
+data.setCell(3, 3, 1515);
+window.suiteTableData['AdjunoGeorgeFoundation']= { tableData: data, tableDiv: 'times-div-AdjunoGeorgeFoundation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <div id="times-div-AdjunoGeorgeFoundation">
+              </div> <!-- times-div-AdjunoGeorgeFoundation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AdjunoGeorgeFoundation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AdjunoGeorgeFoundation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test_1_LaunchTheBrowser</span>
+                <span class="method-start">23095 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutMethod</span>
+                <span class="method-start">38001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=test_1_LaunchTheBrowser status=SUCCESS method=CheckEndToEndFunctionalityTest.test_1...)</span>
+                <span class="method-start">38001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_2_LoginWithIncorrectCredentials</span>
+                <span class="method-start">38001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutMethod</span>
+                <span class="method-start">39516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=test_2_LoginWithIncorrectCredentials status=SUCCESS method=CheckEndToEndFunctionali...)</span>
+                <span class="method-start">39516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_3_LoginWithCorrectCredentials</span>
+                <span class="method-start">39516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=test_3_LoginWithCorrectCredentials status=FAILURE method=CheckEndToEndFunctionality...)</span>
+                <span class="method-start">48901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutMethod</span>
+                <span class="method-start">49605 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_4_SearchProductFromAutosuggestionBox</span>
+                <span class="method-start">49605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">58986 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutMethod</span>
+                <span class="method-start">58986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=test_4_SearchProductFromAutosuggestionBox status=SUCCESS method=CheckEndToEndFuncti...)</span>
+                <span class="method-start">58986 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

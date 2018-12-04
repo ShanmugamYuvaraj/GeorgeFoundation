@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AdjunoGeorgeFoundation]" parallel="none">
+  <parameter name="browser" value="firefox"/>
+  <test name="FirefoxTest(failed)" parallel="none">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest">
+        <methods>
+          <include name="test_3_LoginWithCorrectCredentials"/>
+          <include name="logoutMethod"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [AdjunoGeorgeFoundation] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest">
+        <methods>
+          <include name="test_2_LoginWithIncorrectCredentials"/>
+          <include name="test_1_LaunchTheBrowser"/>
+          <include name="test_4_SearchProductFromAutosuggestionBox"/>
+          <include name="test_3_LoginWithCorrectCredentials"/>
+        </methods>
+      </class> <!-- com.AdjunoGeorgeFoundation.Test.CheckEndToEndFunctionalityTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
